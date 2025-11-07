@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f6ff;
+    color: #2b2348;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    color: #6a38c2;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 10%;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(106, 56, 194, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #ede8ff;
+}
+
+.logo {
+    color: #6a38c2;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #a38bfa;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #3a2e65;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #6a38c2;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #2b2348;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('a-computer-gaming-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #4a2e91;
+}
+
+.hero-text p {
+    color: #5c527a;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+.hero-text a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    background: #6a38c2;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(106, 56, 194, 0.25);
+}
+
+button:hover {
+    background: #7d4df0;
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(106, 56, 194, 0.3);
+}
+
+#about p {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    color: #5c527a;
+    font-size: 1.05rem;
+}
+
+.skills {
+    margin-top: 30px;
+}
+
+.skills h3 {
+    text-align: center;
+    color: #6a38c2;
+    margin-bottom: 15px;
+}
+
+.skills ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills li {
+    list-style: none;
+    background: #ede8ff;
+    color: #4a2e91;
+    padding: 10px 22px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.skills li:hover {
+    background: #dcd2ff;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+
+}
+
+.project-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(106, 56, 194, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #ede8ff;
+    
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(106, 56, 194, 0.12);
+}
+
+.project-card h3 {
+    color: #4a2e91;
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    color: #5c527a;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+#achievements ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+#achievements li {
+    margin: 10px 0;
+    background: #ede8ff;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #4a2e91;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#achievements li:hover {
+    transform: scale(1.04);
+    box-shadow: 0 4px 12px rgba(106, 56, 194, 0.2);
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.contact-info p {
+    margin: 8px 0;
+    color: #4a2e91;
+}
+
+.contact-info a {
+    color: #6a38c2;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-info a:hover {
+    color: #7d4df0;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 10%;
+    background: #f3f0ff;
+    font-size: 0.9rem;
+    color: #4a2e91;
+    border-top: 1px solid #dcd2ff;
+}
