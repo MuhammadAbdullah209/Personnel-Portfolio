@@ -10,11 +10,16 @@
 
 <body>
 
-
     <header>
         <h1 class="logo">Abdullah</h1>
+
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+
         <nav>
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -24,35 +29,41 @@
         </nav>
     </header>
 
-
     <section id="home" class="hero">
 
         <div class="hero-text">
             <h2>Hello, I'm Abdullah</h2>
             <p>A Passionate Web Developer crafting modern and responsive designs.</p>
-            <button onclick="scrollToSection('projects')"><a href="#projects"
-                    style="text-decoration: none; color: white;">View My
-                    Work</a></button>
+
+            <button>
+                <a href="#projects" style="text-decoration: none; color: white;">
+                    View My Work
+                </a>
+            </button>
         </div>
     </section>
 
-
     <section id="about">
         <h2>About Me</h2>
+
         <p>
             I'm a web developer with a love for creative design and clean code.
             My focus is on building sleek, user-friendly websites and learning new technologies.
         </p>
+
         <div class="skills">
             <h3>Education</h3>
+
             <ul>
                 <li>University of South Asia(BSCS) 2022-2026</li>
                 <li>Punjab Group Of Colleges(ICS)2020-2021</li>
                 <li>Ch Rehmat Ali memoril trust boys high school(Matric) 2019-2020</li>
             </ul>
         </div>
+
         <div class="skills">
             <h3>Skills</h3>
+
             <ul>
                 <li>HTML5</li>
                 <li>CSS3</li>
@@ -65,10 +76,12 @@
         </div>
     </section>
 
-
     <section id="projects">
+
         <h2>Projects</h2>
+
         <div class="project-grid">
+
             <div class="project-card">
                 <h3>To-Do App</h3>
                 <p>Simple task manager with localStorage and interactive UI.</p>
@@ -79,85 +92,120 @@
                 <h3>E-Commerce Store (Frontend)</h3>
                 <p>Developed a fully responsive online store interface and a clean UI.</p>
                 <p><strong>Tech:</strong> HTML, CSS, JS, Bootstrap</p>
-                <h4>GitHub-Repo(UnDeployed) Link</h4>
+
+                <h4>GitHub Repo Link</h4>
+
                 <a style="color: #6a38c2; text-decoration: none;"
-                    href="https://github.com/MuhammadAbdullah209/E-commerce-Store-Frontend">GitHub Repo </a>
+                    href="https://github.com/MuhammadAbdullah209/E-commerce-Store-Frontend">
+                    GitHub Repo
+                </a>
             </div>
 
             <div class="project-card">
                 <h3>Travel Agency Website (Frontend)</h3>
-                <p>Built a dynamic travel agency website with destination cards and booking form, featuring modern UI
-                    and smooth user experience.</p>
+
+                <p>
+                    Built a dynamic travel agency website with destination cards and booking form,
+                    featuring modern UI and smooth user experience.
+                </p>
+
                 <p><strong>Tech:</strong> React, CSS</p>
+
                 <h4>Deployed Link:</h4>
-                <a style="color: #6a38c2; text-decoration: none;"
-                    href="https://react-project-final-zeta.vercel.app/">Travel Agency</a>
+
+                <a style="color: #6a38c2; text-decoration: none;" href="https://react-project-final-zeta.vercel.app/">
+                    Travel Agency
+                </a>
             </div>
 
             <div class="project-card">
                 <h3>Real Estate Website (Full Stack)</h3>
-                <p>Developed a real estate app with property listings, filtering, authentication, and backend API
-                    integration.</p>
-                <p><strong>Tech Stack:</strong> MERN (MongoDB, Express, React, Node.js)</p>
+
+                <p>
+                    Developed a real estate app with property listings, filtering,
+                    authentication, and backend API integration.
+                </p>
+
+                <p><strong>Tech Stack:</strong> MERN</p>
+
                 <h4>Deployed Link:</h4>
-                <a style="color: #6a38c2; text-decoration: none;"
-                    href="https://dreamestate-frontend.vercel.app/">RealEstate</a>
+
+                <a style="color: #6a38c2; text-decoration: none;" href="https://dreamestate-frontend.vercel.app/">
+                    RealEstate
+                </a>
             </div>
 
             <div class="project-card">
                 <h3>Learning Management System (Full Stack)</h3>
-                <p>Built a complete LMS with user registration, course creation, and progress tracking using modern tech
-                    stack.</p>
-                <p><strong>Tech Stack:</strong> MERN, Prisma, PostgreSQL, Tailwind CSS</p>
+
+                <p>
+                    Built a complete LMS with user registration, course creation,
+                    and progress tracking using modern tech stack.
+                </p>
+
+                <p><strong>Tech Stack:</strong> MERN, Prisma, PostgreSQL</p>
+
                 <h4>Under Development!</h4>
             </div>
 
             <div class="project-card">
                 <h3>Weather App – OpenWeather API</h3>
-                <p>Created an interactive weather app fetching live data using OpenWeather API and displaying it
-                    dynamically.</p>
-                <p><strong>Tech:</strong> HTML, CSS, JS</p>
-                <h4>GitHub-Repo(UnDeployed) Link</h4>
-                <a style="color: #6a38c2; text-decoration: none;"
-                    href="https://github.com/MuhammadAbdullah209/Weather-App">GitHub Repo </a>
-            </div>
 
-            <div class="project-card">
-                <h3> Expense Tracker</h3>
-                <p>Developed a responsive expense tracker that allows users to add, view, and manage their daily
-                    expenses with real-time balance updates.</p>
-                <p><strong>Tech:</strong> React, CSS</p>
-                <h4>GitHub-Repo(UnDeployed) Link</h4>
+                <p>
+                    Created an interactive weather app fetching live data using
+                    OpenWeather API and displaying it dynamically.
+                </p>
+
+                <p><strong>Tech:</strong> HTML, CSS, JS</p>
+
+                <h4>GitHub Repo Link</h4>
+
                 <a style="color: #6a38c2; text-decoration: none;"
-                    href="https://github.com/MuhammadAbdullah209/Expense-Tracker">GitHub Repo </a>
+                    href="https://github.com/MuhammadAbdullah209/Weather-App">
+                    GitHub Repo
+                </a>
             </div>
 
         </div>
     </section>
 
-
-
     <section id="achievements">
         <h2>Achievements</h2>
+
         <ul>
-            <li> Google Certification of Digital Marketing</li>
-            <li> Certification in Machine Learning</li>
-            <li> Built 7 Mini Projects in HTML, CSS, JS</li>
+            <li>Google Certification of Digital Marketing</li>
+            <li>Certification in Machine Learning</li>
+            <li>Built 7 Mini Projects in HTML, CSS, JS</li>
         </ul>
     </section>
 
-
     <section id="contact">
+
         <h2>Contact Me</h2>
-        <p>If you’d like to work together or have any questions, feel free to reach out!</p>
+
+        <p>
+            If you’d like to work together or have any questions,
+            feel free to reach out!
+        </p>
+
         <div class="contact-info">
-            <a href="mailto:abdullah488838@gmail.com"
-                style="text-decoration:none; background:#6a38c2; color:white; padding:8px 18px; border-radius:25px; display:inline-block; font-size:0.9rem;">
+
+            <a href="mailto:abdullah488838@gmail.com" class="contact-btn">
                 Contact Me
             </a>
-            <p> <a href="https://www.linkedin.com/in/muhammad-abdullah-43a775255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                    target="_blank">LinkedIn</a></p>
-            <p> <a href="https://github.com/MuhammadAbdullah209" target="_blank">GitHub</a></p>
+
+            <p>
+                <a style="color: #6a38c2; text-decoration: none;"
+                    href="https://www.linkedin.com/in/muhammad-abdullah-43a775255">
+                    LinkedIn
+                </a>
+            </p>
+
+            <p>
+                <a style="color: #6a38c2; text-decoration: none;" href="https://github.com/MuhammadAbdullah209">
+                    GitHub
+                </a>
+            </p>
 
         </div>
     </section>
@@ -166,9 +214,8 @@
         <p>© 2026 Abdullah | Crafted in HTML, CSS, JS</p>
     </footer>
 
-    <script>
-        document.documentElement.style.scrollBehavior = "smooth";
-    </script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
