@@ -24,6 +24,7 @@ section {
     padding: 80px 10%;
 }
 
+/* ================= HEADER ================= */
 header {
     display: flex;
     justify-content: space-between;
@@ -64,6 +65,7 @@ header {
     color: #6a38c2;
 }
 
+/* ================= HERO ================= */
 .hero {
     height: 100vh;
     display: flex;
@@ -73,11 +75,10 @@ header {
     color: #2b2348;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('a-computer-gaming-photo.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+        url('a-computer-gaming-photo.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-
 }
 
 .hero-text h2 {
@@ -92,11 +93,24 @@ header {
     font-size: 1.1rem;
 }
 
-.hero-text a {
-    color: white;
+/* HERO BUTTON FIX */
+.hero-btn {
+    background: #6a38c2;
+    color: #fff;
     text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    display: inline-block;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(106, 56, 194, 0.25);
 }
 
+.hero-btn:hover {
+    background: #7d4df0;
+    transform: scale(1.03);
+}
+
+/* ================= GENERAL BUTTON ================= */
 button {
     background: #6a38c2;
     color: #fff;
@@ -112,9 +126,9 @@ button {
 button:hover {
     background: #7d4df0;
     transform: scale(1.03);
-    box-shadow: 0 5px 15px rgba(106, 56, 194, 0.3);
 }
 
+/* ================= ABOUT ================= */
 #about p {
     max-width: 750px;
     margin: auto;
@@ -153,12 +167,12 @@ button:hover {
     background: #dcd2ff;
 }
 
+/* ================= PROJECTS ================= */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 25px;
     margin-top: 30px;
-
 }
 
 .project-card {
@@ -169,7 +183,6 @@ button:hover {
     box-shadow: 0 4px 10px rgba(106, 56, 194, 0.08);
     transition: all 0.3s ease;
     border: 1px solid #ede8ff;
-
 }
 
 .project-card:hover {
@@ -188,6 +201,7 @@ button:hover {
     margin-bottom: 8px;
 }
 
+/* ================= ACHIEVEMENTS ================= */
 #achievements ul {
     list-style: none;
     text-align: center;
@@ -209,6 +223,7 @@ button:hover {
     box-shadow: 0 4px 12px rgba(106, 56, 194, 0.2);
 }
 
+/* ================= CONTACT ================= */
 .contact-info {
     text-align: center;
     margin-top: 15px;
@@ -229,6 +244,7 @@ button:hover {
     color: #7d4df0;
 }
 
+/* ================= FOOTER ================= */
 footer {
     text-align: center;
     padding: 25px 10%;
@@ -236,4 +252,102 @@ footer {
     font-size: 0.9rem;
     color: #4a2e91;
     border-top: 1px solid #dcd2ff;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    section {
+        padding: 70px 6%;
+    }
+
+    header {
+        padding: 15px 6%;
+    }
+
+    .hero-text h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 120px 6%;
+    }
+
+    .hero-text h2 {
+        font-size: 1.9rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .project-card {
+        padding: 18px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .hero-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero-text p {
+        font-size: 0.95rem;
+    }
+
+    .hero-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #achievements li {
+        display: block;
+        margin: 8px auto;
+        width: fit-content;
+    }
+
+    section {
+        padding: 50px 4%;
+    }
 }
