@@ -310,3 +310,76 @@ footer {
         transform: rotate(360deg);
     }
 }
+
+/* DARK MODE BUTTON */
+
+.dark-btn {
+    background: #6a38c2;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+/* DARK MODE */
+
+body.dark-mode {
+    background: #000000;
+    color: #f1f1f1;
+}
+
+/* Header */
+
+body.dark-mode header {
+    background: #000000;
+}
+
+/* Cards */
+
+body.dark-mode .project-card,
+body.dark-mode .skills li,
+body.dark-mode #achievements li {
+    background: #1f1f1f;
+    color: white;
+}
+
+/* Footer */
+
+body.dark-mode footer {
+    background: #1e1e1e;
+    color: white;
+}
+
+/* Navbar Links */
+
+body.dark-mode .nav-links a {
+    color: white;
+}
+
+/* Hero Section */
+
+body.dark-mode .hero {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)),
+        url('a-computer-gaming-photo.jpg');
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* Paragraphs */
+
+body.dark-mode p,
+body.dark-mode li {
+    color: #dddddd;
+}
+
+/* Mobile Menu */
+
+body.dark-mode .nav-links {
+    background: #1e1e1e;
+}
