@@ -18,16 +18,6 @@ hamburger.addEventListener("click", () => {
 });
 const darkModeToggle = document.getElementById("darkModeToggle");
 
-darkModeToggle.addEventListener("click", () => {
-
+darkModeToggle.addEventListener("change", () => {
     document.body.classList.toggle("dark-mode");
-
-    // Change icon
-
-    if (document.body.classList.contains("dark-mode")) {
-        darkModeToggle.innerHTML = "☀️";
-    } else {
-        darkModeToggle.innerHTML = "🌙";
-    }
-
 });

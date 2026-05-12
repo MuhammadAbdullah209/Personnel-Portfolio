@@ -313,15 +313,65 @@ footer {
 
 /* DARK MODE BUTTON */
 
-.dark-btn {
-    background: #6a38c2;
-    color: white;
-    border: none;
-    padding: 8px 14px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 18px;
+/* TOGGLE SWITCH */
+
+.theme-switch {
+    position: relative;
+    width: 55px;
+    height: 28px;
     margin-left: 15px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+
+    background: #6a38c2;
+    border-radius: 50px;
+
+    transition: 0.4s;
+}
+
+/* Small Circle */
+
+.slider::before {
+    content: "🌙";
+
+    position: absolute;
+
+    width: 22px;
+    height: 22px;
+
+    left: 3px;
+    top: 3px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+
+    transition: 0.4s;
+}
+
+/* Active State */
+
+input:checked+.slider {
+    background: #9d4edd;
+}
+
+input:checked+.slider::before {
+    transform: translateX(27px);
+    content: "☀️";
 }
 
 /* DARK MODE */
