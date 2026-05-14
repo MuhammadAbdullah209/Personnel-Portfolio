@@ -433,3 +433,11 @@ body.dark-mode li {
 body.dark-mode .nav-links {
     background: #1e1e1e;
 }
+
+.project-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
