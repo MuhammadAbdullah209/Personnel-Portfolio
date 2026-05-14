@@ -18,6 +18,26 @@ hamburger.addEventListener("click", () => {
 });
 const darkModeToggle = document.getElementById("darkModeToggle");
 
+// Get saved theme
+const savedTheme = localStorage.getItem("Theme");
+
+// Apply saved theme on page load
+if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+    darkModeToggle.checked = true;
+}
+
+// Toggle dark mode
 darkModeToggle.addEventListener("change", () => {
-    document.body.classList.toggle("dark-mode");
+
+    if (darkModeToggle.checked) {
+
+        document.body.classList.add("dark-mode");
+        localStorage.setItem("Theme", "dark");
+
+    } else {
+
+        document.body.classList.remove("dark-mode");
+        localStorage.setItem("Theme", "light");
+    }
 });
