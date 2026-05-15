@@ -158,7 +158,7 @@ button a {
 .about-image-placeholder img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:cover;
     display: block;
 }
 
@@ -385,7 +385,7 @@ body.dark-mode li {
 }
 
 body.dark-mode .nav-links {
-    background: #1e1e1e;
+    background: #000000;
 }
 
 /* TABLET */
