@@ -6,7 +6,6 @@ const navLinks = document.getElementById("navLinks");
 
 hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
-
     // Toggle hamburger ↔ cross
     if (hamburger.classList.contains("active")) {
         hamburger.classList.remove("active");
@@ -17,10 +16,8 @@ hamburger.addEventListener("click", () => {
     }
 });
 const darkModeToggle = document.getElementById("darkModeToggle");
-
 // Get saved theme
 const savedTheme = localStorage.getItem("Theme");
-
 // Apply saved theme on page load
 if (savedTheme === "dark") {
     document.body.classList.add("dark-mode");
