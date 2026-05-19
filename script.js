@@ -114,14 +114,14 @@ cards.forEach((card, index) => {
 /* PARALLAX HERO EFFECT */
 /* ========================= */
 
-window.addEventListener("scroll", () => {
+// window.addEventListener("scroll", () => {
 
-    const hero = document.querySelector(".hero");
+//     const hero = document.querySelector(".hero");
 
-    let offset = window.pageYOffset;
+//     let offset = window.pageYOffset;
 
-    hero.style.backgroundPositionY = offset * 0.5 + "px";
-});
+//     hero.style.backgroundPositionY = offset * 0.5 + "px";
+// });
 
 /* ========================= */
 /* SMOOTH ACTIVE NAV LINK */
